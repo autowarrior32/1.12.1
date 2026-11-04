@@ -9,10 +9,8 @@ int main(int argc, char** argv)
 	SetConsoleCP(CP_UTF8);
 
 	std::string str1{};
-	std::string str2{};
-
 	std::ifstream fin("utf8_in.txt");
-
+	
 	if (fin.is_open() == false)
 	{
 		return(1);
@@ -22,9 +20,6 @@ int main(int argc, char** argv)
 	{
 		std::cout << str1 << std::endl;
 	}
-
-
-
 
 	return(0);
 }
